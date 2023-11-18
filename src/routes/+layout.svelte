@@ -1,0 +1,52 @@
+<script>
+	import '../app.css';
+	import { onMount } from 'svelte';
+	import Navbar from '$lib/components/navigation/Navbar.svelte';
+	import { fade } from 'svelte/transition';
+	import Footer from '$lib/components/layout/Footer.svelte';
+
+	let headerHeight = 0;
+	let isReady = false;
+
+	onMount(() => {
+		headerHeight = document.querySelector('header').clientHeight;
+		isReady = true;
+	});
+</script>
+
+<body class="bg-background md:max-w-[666px] lg:mx-auto ">
+	<header
+		class="fixed top-0 left-0 right-0 z-50 pt-2 px-2 md:max-w-[666px] lg:mx-auto  before:content-[''] before:absolute before:h-[20px] before:block before:top-0 before:w-full before:left-1/2 before:transform before:-translate-x-1/2 before:bg-gradient-to-t before:from-background before:to-transparent before:backdrop-blur-md before:backdrop-saturate-150"
+	>
+		<Navbar />
+	</header>
+	{#if isReady}
+		<main
+			in:fade={{ duration: 200, delay: 200 }}
+			style="margin-top: {headerHeight + 25}px"
+			class="flex flex-col w-full md:pt-4 mb-4 gap-14 justify-center overflow-y-auto"
+		>
+			<slot />
+		</main>
+		<Footer />
+	{/if}
+</body>
+
+<style>
+	::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	::-webkit-scrollbar-track {
+		background: rgb(var(--color-background));
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: rgba(var(--color-accent) / 0.5);
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background: rgba(var(--color-accent) / 0.8);
+	}
+
+</style>
