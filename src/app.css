@@ -1,49 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html {
-	color: rgb(var(--color-inverse));
-	font-family: 'Manrope', sans-serif;
-	letter-spacing: 0.05em;
+    color: rgb(var(--color-inverse));
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: 0.025em;
 }
 
 /* Dark mode */
 
 :root {
-	--color-inverse: 235 240 251;
-	--color-background: 12 18 30;
-	--color-nav-background: 18 27 44;
-	--color-accent: 136 164 230;
-	--color-accent-dark: 175 194 239;
-	--color-on-accent: 9 17 34;
-	--color-primary-txt: 255 255 255;
-	--color-secondary-txt: var(--color-inverse) / 0.85;
-	--color-tertiary-txt: var(--color-inverse) / 0.65;
-	--color-divider: var(--color-inverse) / 0.12;
-	--color-shadow-brand: 156 179 235;
-	--color-shadow-blue: 129 193 233;
-	--color-shadow-green: 121 217 166;
-	--color-shadow-yellow: 250 212 131;
-	--color-shadow-orange: 252 180 131;
-	--color-shadow-red: 243 137 156;
-	--color-shadow-purple: 184 152 227;
-	--color-gradient-brand: var(--color-shadow-brand);
-	--color-gradient-blue: var(--color-shadow-blue);
-	--color-gradient-green: var(--color-shadow-green);
-	--color-gradient-yellow: var(--color-shadow-yellow);
-	--color-gradient-orange: var(--color-shadow-orange);
-	--color-gradient-red: var(--color-shadow-red);
-	--color-gradient-purple: var(--color-shadow-purple);
+    --color-inverse: 235 240 251;
+    --color-background: 12 18 30;
+    --color-nav-background: 18 27 44;
+    --color-accent: 136 164 230;
+    --color-accent-dark: 175 194 239;
+    --color-on-accent: 9 17 34;
+    --color-primary-txt: 255 255 255;
+    --color-secondary-txt: var(--color-inverse) / 0.85;
+    --color-tertiary-txt: var(--color-inverse) / 0.65;
+    --color-divider: var(--color-inverse) / 0.12;
+    --color-shadow-brand: 156 179 235;
+    --color-shadow-blue: 129 193 233;
+    --color-shadow-green: 121 217 166;
+    --color-shadow-yellow: 250 212 131;
+    --color-shadow-orange: 252 180 131;
+    --color-shadow-red: 243 137 156;
+    --color-shadow-purple: 184 152 227;
+    --color-gradient-brand: var(--color-shadow-brand);
+    --color-gradient-blue: var(--color-shadow-blue);
+    --color-gradient-green: var(--color-shadow-green);
+    --color-gradient-yellow: var(--color-shadow-yellow);
+    --color-gradient-orange: var(--color-shadow-orange);
+    --color-gradient-red: var(--color-shadow-red);
+    --color-gradient-purple: var(--color-shadow-purple);
 }
 
 /* Light mode */
 .theme-light {
-	--color-background: 255 255 255;
-	--color-nav-background: 255 255 255;
-	--color-accent: 136 164 230;
-	--color-accent-dark: 175 194 239;
-	--color-text: 12 18 30;
+    --color-background: 255 255 255;
+    --color-nav-background: 255 255 255;
+    --color-accent: 136 164 230;
+    --color-accent-dark: 175 194 239;
+    --color-text: 12 18 30;
 }

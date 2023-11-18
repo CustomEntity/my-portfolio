@@ -4,10 +4,6 @@ import {
 	SPOTIFY_REFRESH_TOKEN
 } from '$env/static/private';
 
-console.log('SPOTIFY_CLIENT_ID', SPOTIFY_CLIENT_ID);
-console.log('SPOTIFY_CLIENT_SECRET', SPOTIFY_CLIENT_SECRET);
-console.log('SPOTIFY_REFRESH_TOKEN', SPOTIFY_REFRESH_TOKEN);
-
 const BASE64_ENCODED = Buffer.from(`${SPOTIFY_CLIENT_ID}:${SPOTIFY_CLIENT_SECRET}`).toString(
 	'base64'
 );

@@ -16,6 +16,9 @@ export default {
 	],
 	theme: {
 		extend: {
+			fontFamily: {
+				inter: ['Inter', 'serif']
+			},
 			colors: {
 				/** --color-tertiary-txt: var(--color-inverse) 0.65; **/
 				inverse: 'rgb(var(--color-inverse) / <alpha-value>)',
