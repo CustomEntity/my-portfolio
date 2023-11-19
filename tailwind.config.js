@@ -3,7 +3,8 @@
 const plugin = require('tailwindcss/plugin');
 
 export default {
-	content: ['./src/**/*.{html,js,svelte,ts}'],
+	important: true,
+	content: ['./src/**/*.{html,js,svelte,ts,svx}'],
 	safelist: [
 		{
 			pattern: /(from|to)-gradient-(brand|blue|green|yellow|orange|red|purple)/,
@@ -17,7 +18,8 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				inter: ['Inter', 'serif']
+				inter: ['Inter', 'serif'],
+				manrope: ['Manrope', 'sans-serif']
 			},
 			colors: {
 				/** --color-tertiary-txt: var(--color-inverse) 0.65; **/
