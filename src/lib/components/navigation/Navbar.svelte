@@ -44,50 +44,52 @@
 				Flavio Moreno
 			</span>
         </a>
-        {#if windowInnerWidth < 768}
-            <div class="flex items-center gap-7">
-                <button
-                        class="focus:bg-accent-dark/[0.1] rounded-sm focus:outline-none p-2 select-none"
-                        on:click={toggleNavBar}
-                >
-                    <svg
-                            viewBox="0 0 24 24"
-                            style="width:1.5rem;height:1.5rem"
-                            role="presentation"
-                            class="text-accent fill-accent transition-transform
-               {isNavBarOpen ? 'rotate-45 scale-[1.15]' : 'rotate-0 scale-100'}"
+        {#if windowInnerWidth !== undefined}
+            {#if windowInnerWidth < 768}
+                <div class="flex items-center gap-7">
+                    <button
+                            class="focus:bg-accent-dark/[0.1] rounded-sm focus:outline-none p-2 select-none"
+                            on:click={toggleNavBar}
                     >
-                        {#if isNavBarOpen}
-                            <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" style="fill:currentColor"/>
-                        {:else}
-                            <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" style="fill:currentColor"/>
-                        {/if}
-                    </svg>
-                </button>
-            </div>
-        {:else}
-            <ul class="flex items-center gap-2">
-                <li class="relative h-full">
-                    <NavbarButton
-                            hocusSpanClass="text-transparent bg-gradient-to-r bg-clip-text saturate-150 from-gradient-blue to-gradient-green"
-                            text="About" title="About page" href="/about"/>
-                </li>
-                <li>
-                    <NavbarButton
-                            hocusSpanClass="text-transparent bg-gradient-to-r bg-clip-text saturate-150 from-gradient-yellow to-gradient-orange"
-                            text="Blog" title="Blog page" href="/blog"/>
-                </li>
-                <li>
-                    <NavbarButton
-                            hocusSpanClass="text-transparent bg-gradient-to-r bg-clip-text saturate-150 from-gradient-red to-gradient-purple"
-                            text="Projects" title="Projects page" href="/projects"/>
-                </li>
-                <li>
-                    <NavbarButton
-                            hocusSpanClass="text-transparent bg-gradient-to-r bg-clip-text saturate-150 from-gradient-brand to-gradient-blue"
-                            text="Contact" title="Contact page" href="/contact"/>
-                </li>
-            </ul>
+                        <svg
+                                viewBox="0 0 24 24"
+                                style="width:1.5rem;height:1.5rem"
+                                role="presentation"
+                                class="text-accent fill-accent transition-transform
+               {isNavBarOpen ? 'rotate-45 scale-[1.15]' : 'rotate-0 scale-100'}"
+                        >
+                            {#if isNavBarOpen}
+                                <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" style="fill:currentColor"/>
+                            {:else}
+                                <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" style="fill:currentColor"/>
+                            {/if}
+                        </svg>
+                    </button>
+                </div>
+            {:else}
+                <ul class="flex items-center gap-2">
+                    <li class="relative h-full">
+                        <NavbarButton
+                                hocusSpanClass="text-transparent bg-gradient-to-r bg-clip-text saturate-150 from-gradient-blue to-gradient-green"
+                                text="About" title="About page" href="/about"/>
+                    </li>
+                    <li>
+                        <NavbarButton
+                                hocusSpanClass="text-transparent bg-gradient-to-r bg-clip-text saturate-150 from-gradient-yellow to-gradient-orange"
+                                text="Blog" title="Blog page" href="/blog"/>
+                    </li>
+                    <li>
+                        <NavbarButton
+                                hocusSpanClass="text-transparent bg-gradient-to-r bg-clip-text saturate-150 from-gradient-red to-gradient-purple"
+                                text="Projects" title="Projects page" href="/projects"/>
+                    </li>
+                    <li>
+                        <NavbarButton
+                                hocusSpanClass="text-transparent bg-gradient-to-r bg-clip-text saturate-150 from-gradient-brand to-gradient-blue"
+                                text="Contact" title="Contact page" href="/contact"/>
+                    </li>
+                </ul>
+            {/if}
         {/if}
     </div>
     {#if isNavBarOpen}
