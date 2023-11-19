@@ -44,7 +44,8 @@ export default {
 				'gradient-yellow': 'rgb(var(--color-gradient-yellow) / <alpha-value>)',
 				'gradient-orange': 'rgb(var(--color-gradient-orange) / <alpha-value>)',
 				'gradient-red': 'rgb(var(--color-gradient-red) / <alpha-value>)',
-				'gradient-purple': 'rgb(var(--color-gradient-purple) / <alpha-value>)'
+				'gradient-purple': 'rgb(var(--color-gradient-purple) / <alpha-value>)',
+				'gradient-pink': 'rgb(var(--color-gradient-pink) / <alpha-value>)'
 			}
 		}
 	},

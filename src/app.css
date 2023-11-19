@@ -30,6 +30,7 @@ html {
     --color-shadow-orange: 252 180 131;
     --color-shadow-red: 243 137 156;
     --color-shadow-purple: 184 152 227;
+    --color-shadow-pink: 255 209 220;
     --color-gradient-brand: var(--color-shadow-brand);
     --color-gradient-blue: var(--color-shadow-blue);
     --color-gradient-green: var(--color-shadow-green);
@@ -37,6 +38,7 @@ html {
     --color-gradient-orange: var(--color-shadow-orange);
     --color-gradient-red: var(--color-shadow-red);
     --color-gradient-purple: var(--color-shadow-purple);
+    --color-gradient-pink: var(--color-shadow-pink);
 }
 
 /* Light mode */
