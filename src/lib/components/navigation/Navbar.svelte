@@ -37,7 +37,7 @@
 >
     <div class="flex items-center justify-between w-full h-[60px]">
         <a href="/"
-           class="flex items-center gap-3 rounded-[6px] hocus:bg-accent-dark/[0.1] focus:outline-offset-0 h-full px-2">
+           class="flex items-center gap-3 rounded-[6px] hocus:bg-accent-dark/[0.1]  h-full px-2">
             <img src="favicon.png" alt="Flavio Moreno" class="w-6"/>
             <span
                     class="flex items-center h-full  transform text-transparent font-bold bg-gradient-to-r from-gradient-brand to-gradient-blue bg-clip-text saturate-125 dark:saturate-150"
