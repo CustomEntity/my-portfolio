@@ -29,17 +29,18 @@
 />
 
 <nav
-        class="flex flex-col w-full bg-nav-background/[0.65] px-4 border border-accent-dark/[0.12] backdrop-blur-[10px] backdrop-saturate-150 rounded-[10px] transition-all duration-200 hover:border-accent-dark/[0.24] hover:[box-shadow:0_0_8px_2px_rgba(var(--color-accent-dark)/0.16)] {isNavBarOpen
+        class="flex flex-col w-full bg-nav-background/[0.65] px-3 py-2 border border-accent-dark/[0.12] backdrop-blur-[10px] backdrop-saturate-150 rounded-[10px] transition-all duration-200 hover:border-accent-dark/[0.24] hover:[box-shadow:0_0_8px_2px_rgba(var(--color-accent-dark)/0.16)] {isNavBarOpen
 		? 'h-[calc(100vh-1rem)]'
 		: 'h-[60px] '}
 		{hasScrolled ? '[box-shadow:0_0_6px_1px_rgba(var(--color-accent-dark)/0.16)]' : ''}
 "
 >
     <div class="flex items-center justify-between w-full h-[60px]">
-        <a href="/" class="flex items-center gap-2">
-            <img src="f_icon.png" alt="Flavio Moreno" class="w-6"/>
+        <a href="/"
+           class="flex items-center gap-3 rounded-[6px] hocus:bg-accent-dark/[0.1] focus:outline-offset-0 h-full px-2">
+            <img src="favicon.png" alt="Flavio Moreno" class="w-6"/>
             <span
-                    class="h-full transform text-transparent font-bold bg-gradient-to-r from-gradient-brand to-gradient-blue bg-clip-text saturate-125 dark:saturate-150"
+                    class="flex items-center h-full  transform text-transparent font-bold bg-gradient-to-r from-gradient-brand to-gradient-blue bg-clip-text saturate-125 dark:saturate-150"
             >
 				Flavio Moreno
 			</span>
