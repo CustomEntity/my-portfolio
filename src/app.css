@@ -10,6 +10,11 @@ html {
     letter-spacing: 0.025em;
 }
 
+:focus {
+    outline: 2px dashed rgb(var(--color-secondary-txt));
+    outline-offset: 0.25rem;
+}
+
 /* Dark mode */
 
 :root {

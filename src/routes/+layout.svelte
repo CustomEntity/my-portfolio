@@ -16,7 +16,7 @@
 
 <body class="bg-background md:max-w-[666px] md:mx-auto">
 	<header
-		class="fixed top-0 left-0 right-0 z-50 pt-2 px-2 md:max-w-[666px] md:mx-auto before:content-[''] before:absolute before:h-[20px] before:block before:top-0 before:w-full before:left-1/2 before:transform before:-translate-x-1/2 before:bg-gradient-to-t before:from-background before:to-transparent before:backdrop-blur-md before:backdrop-saturate-150"
+		class="fixed top-0 left-0 right-0 z-50 pt-3 px-2 md:max-w-[666px] md:mx-auto before:content-[''] before:absolute before:h-[20px] before:block before:top-0 before:w-full before:left-1/2 before:transform before:-translate-x-1/2 before:bg-gradient-to-t before:from-background before:to-transparent before:backdrop-blur-md before:backdrop-saturate-150"
 	>
 		<Navbar />
 	</header>

@@ -11,10 +11,10 @@
 <a
 	href={link}
 	style="--project-color: {color}"
-	class="flex items-center rounded-[10px] gap-3 p-2 transition-all duration-200 hocus:bg-[rgb(var(--project-color)/0.18)]"
+	class="flex items-center rounded-[10px] gap-3 p-2 transition-colors duration-200 hocus:bg-[rgb(var(--project-color)/0.18)] focus:outline-offset-0"
 >
 	<img
-		class="h-[54px] w-[54px] rounded-[10px] object-cover transition-all duration-200 bg-[rgb(var(--project-color)/0.18)]"
+		class="h-[54px] w-[54px] rounded-[10px] object-cover transition-colors duration-200 bg-[rgb(var(--project-color)/0.18)]"
 		src={imageUrl}
 		alt={title}
 	/>
