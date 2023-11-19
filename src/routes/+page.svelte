@@ -181,7 +181,7 @@
         >Skills</span
         >
     </h2>
-    <ul class="flex flex-wrap gap-3 overflow-hidden px-1">
+    <ul class="flex flex-wrap gap-3 overflow-hidden px-[1px]">
         <li>
             <SkillCard name="TypeScript">
 				<span slot="icon">
