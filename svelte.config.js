@@ -1,7 +1,7 @@
 import adapter from '@sveltejs/adapter-auto';
-import {vitePreprocess} from '@sveltejs/kit/vite';
+import { vitePreprocess } from '@sveltejs/kit/vite';
 import mdsvexConfig from './mdsvex.config.js';
-import {mdsvex} from 'mdsvex';
+import { mdsvex } from 'mdsvex';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
