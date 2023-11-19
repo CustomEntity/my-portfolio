@@ -1,14 +1,14 @@
 <script lang="ts">
-	import 'animate.css';
-	import {onMount} from 'svelte';
-	import AccentButton from '$lib/components/button/AccentButton.svelte';
-	import SkillCard from '$lib/components/misc/SkillCard.svelte';
-	import {RecruitmentStatus} from '../types/recruitment.type';
-	import StatusBadge from '$lib/components/misc/StatusBadge.svelte';
-	import SocialLinks from '$lib/components/social-links/SocialLinks.svelte';
-	import ProjectCard from '$lib/components/project/ProjectCard.svelte';
+    import 'animate.css';
+    import {onMount} from 'svelte';
+    import AccentButton from '$lib/components/button/AccentButton.svelte';
+    import SkillCard from '$lib/components/misc/SkillCard.svelte';
+    import {RecruitmentStatus} from '../types/recruitment.type';
+    import StatusBadge from '$lib/components/misc/StatusBadge.svelte';
+    import SocialLinks from '$lib/components/social-links/SocialLinks.svelte';
+    import ProjectCard from '$lib/components/project/ProjectCard.svelte';
 
-	let recruitmentStatus: RecruitmentStatus = RecruitmentStatus.OPEN;
+    let recruitmentStatus: RecruitmentStatus = RecruitmentStatus.OPEN;
     let heySpan: HTMLSpanElement | null = null;
     let currentHelloWorldIndex = 0;
 
@@ -66,7 +66,7 @@
 
 <section id="introduction" class="px-3 flex flex-col md:flex-row-reverse md:justify-between gap-4">
     <div class="relative w-[168px] h-[168px]">
-        <img src="me.png" alt="Flavio Moreno" class="block w-full h-full rounded-full"/>
+        <img src="me.webp" alt="Flavio Moreno" class="block w-full h-full rounded-full"/>
         <StatusBadge {recruitmentStatus}/>
     </div>
     <div class="flex flex-col gap-6">
@@ -154,6 +154,7 @@
     </div>
     <div class="p-1">
         <ProjectCard
+                link="https://valodle.eu"
                 title="Valodle"
                 titleTooltip="Valodle has more than 40k unique visitors per month"
                 description="Daily guess Valorant agents with clues, emojis, ablities..."
@@ -162,6 +163,7 @@
                 spanContent={valodleSpan}
         />
         <ProjectCard
+                link="https://vyntr.app"
                 title="VyNtr"
                 description="AI-driven LinkedIn outreach to convert more leads with our smart chatbot."
                 imageUrl="vyntr.png"
