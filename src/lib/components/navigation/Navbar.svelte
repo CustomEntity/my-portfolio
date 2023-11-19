@@ -3,12 +3,18 @@
     import {fly} from 'svelte/transition';
     import NavbarButton from '$lib/components/button/NavbarButton.svelte';
 
+
     export let pathName: string;
 
-    $: if (pathName) {
+    const closeNavBarIfOpen = () => {
         if (isNavBarOpen) {
             toggleNavBar();
         }
+    };
+    
+
+    $: if (pathName) {
+        closeNavBarIfOpen();
     }
 
     let isNavBarOpen: boolean = false;
