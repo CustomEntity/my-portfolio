@@ -1,0 +1,34 @@
+---
+title: My Article
+description: Description of my article
+date: 2021-01-01
+---
+
+👋 Hello! I'm **Flavio Moreno**, a Full-Stack Developer and Software Architect, hailing from the vibrant and culturally rich country of [France 🇫🇷](https://www.google.com/maps/place/France). My journey in the tech world is not just a career path, but a deep-seated passion for technology, innovation, and creative problem-solving.
+
+**A Journey Through Code:**
+
+Ever since I first laid my hands on a keyboard, the world of coding has been my canvas and my playground. From the early days of tinkering with basic scripts to architecting complex software systems, every line of code I write is a part of my story. My passion for development goes beyond the professional scope; it's a means of self-expression and continuous learning. I am particularly fascinated by the elegance of clean architecture and the depth of Domain-Driven Design (DDD). These aren’t just methodologies for me; they are a way of thinking, an approach to breaking down complex problems and creating solutions that are not only efficient but also sustainable and scalable.
+
+**Innovating and Crafting:**
+
+Innovation is at the heart of what I do. Whether it's exploring the latest in web technologies or experimenting with cutting-edge tools, I'm always on the lookout for ways to push the boundaries of what's possible. My days are filled with more than just coding; they involve brainstorming sessions, collaborative discussions with peers, and constantly keeping an eye on emerging tech trends. I believe that a true software craftsman never stops learning, and that’s the philosophy I live by.
+
+**Balancing Life:**
+
+Outside the sphere of coding and technology, I find balance in life through various hobbies and interests. I enjoy the tranquility that comes from spending time with my cats, the excitement of diving into the imaginative worlds of anime, and the insights gained from reading books on programming and technology. These activities not only provide a respite from my professional pursuits but also inspire and invigorate my creative thinking.
+
+**Let's Connect:**
+
+I'm always open to discussing new technologies, sharing ideas, and exploring potential collaborations. Feel free to reach out:
+
+- 📧 Email: [flavio.moreno@example.com](mailto:flavio.moreno@example.com)
+- 💼 LinkedIn: [Flavio Moreno](https://www.linkedin.com/in/flavio-moreno/)
+- 🐱‍💻 GitHub: [CustomEntity](https://github.com/CustomEntity)
+
+Thank you for taking the time to learn about my journey. I look forward to the exciting opportunities and challenges ahead!
+
+Warm regards,<br>
+**Flavio Moreno**
+
+

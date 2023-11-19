@@ -1,0 +1,71 @@
+.markdown-theme {
+    @apply font-inter leading-relaxed text-[var(--color-primary-txt)];
+    @apply space-y-4;
+}
+
+.markdown-theme h1 {
+    @apply text-[var(--color-accent)] font-semibold text-3xl
+}
+
+.markdown-theme h2 {
+    @apply text-[var(--color-accent-dark)] font-semibold text-2xl
+}
+
+.markdown-theme h3 {
+    @apply text-[var(--color-accent)] font-medium text-xl
+}
+
+.markdown-theme p {
+}
+
+.markdown-theme blockquote {
+    @apply bg-accent-dark/[0.036] border-0 border-l-[0.25rem] border-divider p-4;
+    @apply rounded-[6px] text-secondary-txt font-normal;
+    @apply whitespace-pre-wrap;
+}
+
+.markdown-theme ul,
+.markdown-theme ol {
+
+}
+
+.markdown-theme li {
+
+}
+
+.markdown-theme a {
+    @apply text-[var(--color-accent)] font-medium hover:underline text-accent;
+}
+
+.markdown-theme a:hover {
+    @apply underline;
+}
+
+.markdown-theme code {
+    @apply bg-[rgba(var(--color-secondary-txt)/.1)] rounded px-1 font-mono;
+}
+
+.markdown-theme pre {
+    @apply bg-[rgba(var(--color-nav-background)/.85)] rounded overflow-x-auto p-4 font-manrope;
+}
+
+.markdown-theme img {
+    @apply max-w-full h-auto;
+}
+
+.markdown-theme table {
+    @apply w-full border-collapse;
+}
+
+.markdown-theme th,
+.markdown-theme td {
+    @apply border border-[var(--color-divider)] text-left;
+}
+
+.markdown-theme th {
+    @apply bg-[rgba(var(--color-accent-dark)/.1)];
+}
+
+.markdown-theme hr {
+    @apply border-t border-[var(--color-divider)] ;
+}
