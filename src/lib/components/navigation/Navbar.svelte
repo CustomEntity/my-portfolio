@@ -11,7 +11,7 @@
             toggleNavBar();
         }
     };
-    
+
 
     $: if (pathName) {
         closeNavBarIfOpen();
@@ -95,6 +95,8 @@
                 <ul class="flex items-center gap-2">
                     <li class="relative h-full">
                         <NavbarButton
+                                containerClass="{pathName === '/about' ? 'bg-accent-dark/[0.1]' : ''}"
+                                spanClass="{pathName === '/about' ? 'text-transparent bg-gradient-to-r bg-clip-text saturate-150 from-gradient-blue to-gradient-green' : ''}"
                                 hocusSpanClass="text-transparent bg-gradient-to-r bg-clip-text saturate-150 from-gradient-blue to-gradient-green"
                                 text="About"
                                 title="About page"
@@ -103,6 +105,8 @@
                     </li>
                     <li>
                         <NavbarButton
+                                containerClass="{pathName === '/blog' ? 'bg-accent-dark/[0.1]' : ''}"
+                                spanClass="{pathName === '/blog' ? 'text-transparent bg-gradient-to-r bg-clip-text saturate-150 from-gradient-yellow to-gradient-orange' : ''}"
                                 hocusSpanClass="text-transparent bg-gradient-to-r bg-clip-text saturate-150 from-gradient-yellow to-gradient-orange"
                                 text="Blog"
                                 title="Blog page"
@@ -111,6 +115,8 @@
                     </li>
                     <li>
                         <NavbarButton
+                                containerClass="{pathName === '/projects' ? 'bg-accent-dark/[0.1]' : ''}"
+                                spanClass="{pathName === '/projects' ? 'text-transparent bg-gradient-to-r bg-clip-text saturate-150 from-gradient-red to-gradient-purple' : ''}"
                                 hocusSpanClass="text-transparent bg-gradient-to-r bg-clip-text saturate-150 from-gradient-red to-gradient-purple"
                                 text="Projects"
                                 title="Projects page"
@@ -119,6 +125,8 @@
                     </li>
                     <li>
                         <NavbarButton
+                                containerClass="{pathName === '/contact' ? 'bg-accent-dark/[0.1]' : ''}"
+                                spanClass="{pathName === '/contact' ? 'text-transparent bg-gradient-to-r bg-clip-text saturate-150 from-gradient-brand to-gradient-blue' : ''}"
                                 hocusSpanClass="text-transparent bg-gradient-to-r bg-clip-text saturate-150 from-gradient-brand to-gradient-blue"
                                 text="Contact"
                                 title="Contact page"
