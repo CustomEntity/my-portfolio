@@ -59,7 +59,10 @@
                 href="/"
                 class="flex items-center gap-3 rounded-[6px] hocus:bg-accent-dark/[0.1] h-full px-2"
         >
-            <img src="favicon.png" alt="Flavio Moreno" class="w-6 h-6"/>
+            <img
+                    width="24"
+                    height="24"
+                    src="favicon.png" alt="Flavio Moreno" class="w-6 h-6"/>
             <span
                     class="flex items-center h-full transform text-transparent font-bold bg-gradient-to-r from-gradient-brand to-gradient-blue bg-clip-text saturate-125 dark:saturate-150"
             >

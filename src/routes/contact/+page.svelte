@@ -1,8 +1,8 @@
 <script lang="ts">
-	import PageData = App.PageData;
-	import {superForm} from 'sveltekit-superforms/client';
+    import PageData = App.PageData;
+    import {superForm} from 'sveltekit-superforms/client';
 
-	export let data: PageData;
+    export let data: PageData;
 
     let submissionStatus = '';
 
@@ -25,7 +25,7 @@
 
 <section id="contact" class="px-3 flex flex-col gap-4">
     <h2
-            class="text-[28px] font-bold inline-block self-start [--text-shadow-color:var(--color-transparent)] [text-shadow:0.125rem_0.125rem_0_var(--text-shadow-color)] dark:[text-shadow:none] dark:text-transparent dark:bg-gradient-to-r dark:bg-clip-text dark:saturate-150 w-[unset] dark:from-gradient-brand dark:to-gradient-blue"
+            class="text-[32px] font-bold inline-block self-start [--text-shadow-color:var(--color-transparent)] [text-shadow:0.125rem_0.125rem_0_var(--text-shadow-color)] dark:[text-shadow:none] dark:text-transparent dark:bg-gradient-to-r dark:bg-clip-text dark:saturate-150 w-[unset] dark:from-gradient-brand dark:to-gradient-blue"
             style="--text-shadow-color: var(--color-shadow-blue);"
     >
 		<span
