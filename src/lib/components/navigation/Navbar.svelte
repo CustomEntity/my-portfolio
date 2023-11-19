@@ -6,7 +6,9 @@
     export let pathName: string;
 
     $: if (pathName) {
-        isNavBarOpen = false;
+        if (isNavBarOpen) {
+            toggleNavBar();
+        }
     }
 
     let isNavBarOpen: boolean = false;
