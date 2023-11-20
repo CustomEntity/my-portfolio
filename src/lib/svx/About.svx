@@ -4,6 +4,11 @@ description: Description of my article
 date: 2021-01-01
 ---
 
+<img src="./about.jpg" alt="Flavio Moreno" width="100%" class="rounded-lg h-72 object-cover object-center" />
+<center class="text-sm text-secondary-txt">📷 Me and my girlfriend to the waterfalls</center>
+
+<br />
+
 👋 Hello! I'm **Flavio Moreno**, a Full-Stack Developer and Software Architect, hailing from the vibrant and culturally rich country of [France 🇫🇷](https://www.google.com/maps/place/France). My journey in the tech world is not just a career path, but a deep-seated passion for technology, innovation, and creative problem-solving.
 
 **A Journey Through Code:**
