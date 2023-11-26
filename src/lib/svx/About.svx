@@ -4,8 +4,7 @@ description: Description of my article
 date: 2021-01-01
 ---
 
-<img src="./about.jpg" alt="Flavio Moreno" width="100%" class="rounded-lg h-72 object-cover object-center" />
-<center class="text-sm text-secondary-txt">📷 Me and my girlfriend to the waterfalls</center>
+<img src="./about.png" alt="Flavio Moreno" width="100%" class="rounded-lg h-72 object-cover object-center" />
 
 <br />
 

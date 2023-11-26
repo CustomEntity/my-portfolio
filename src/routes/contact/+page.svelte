@@ -71,7 +71,7 @@
         />
         <button
                 type="submit"
-                class="p-2 border-2 border-gray-300 dark:border-gray-700 rounded-md focus:outline-none"
+                class="p-2 border-2 border-gray-300 dark:border-gray-700 rounded-md focus:outline-none hocus:bg-accent-dark/[0.05]"
         >
             {#if submissionStatus === 'submitting'}
 				<span>
