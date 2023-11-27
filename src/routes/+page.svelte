@@ -7,6 +7,7 @@
     import StatusBadge from '$lib/components/misc/StatusBadge.svelte';
     import SocialLinks from '$lib/components/social-links/SocialLinks.svelte';
     import ProjectCard from '$lib/components/project/ProjectCard.svelte';
+    import TransparentButton from "$lib/components/button/TransparentButton.svelte";
 
     let recruitmentStatus: RecruitmentStatus = RecruitmentStatus.OPEN;
     let heySpan: HTMLSpanElement | null = null;
@@ -39,7 +40,7 @@
     ];
 
     const valodleSpan = `<div class="flex items-center gap-1">
-<svg style="width: 1.2rem; height: 1.2rem" viewBox="0 -4 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg style="width: 0.95rem; height: 0.95rem" viewBox="0 -4 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
 
 </defs>
@@ -124,23 +125,24 @@
             >
         </h2>
         <div class="flex gap-4 px-3">
-            <a
+            <TransparentButton
                     title="Flavio's resume pdf file"
-                    class="hocus:underline-offset-2 hocus:decoration-2 inline-flex items-center justify-center self-start min-h-[2.625rem] rounded-[6px] py-[6px] px-[12px] gap-[6px] font-semibold tracking-wide transition truncate bg-transparent border border-divider text-secondary-txt shadow-sm hocus:transform hocus:-translate-y-1 hocus:no-underline hocus:shadow hocus:bg-accent-dark/[0.12] hocus:border-accent-dark hocus:text-primary-txt"
-                    aria-label="Flavio's resume pdf file"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    ariaLabel="Flavio's resume pdf file"
                     href="/resume.pdf"
+                    text="Resume"
             >
-                <svg viewBox="0 0 24 24" style="width:1.35rem;height:1.35rem" role="presentation">
+<span slot="icon">
+					 <svg viewBox="0 0 24 24" style="width:1.35rem;height:1.35rem" role="presentation">
                     <path
                             d="M14 2H6C4.89 2 4 2.9 4 4V20C4 21.11 4.89 22 6 22H18C19.11 22 20 21.11 20 20V8L14 2M18 20H6V4H13V9H18V20M9.54 15.65L11.63 17.74L10.35 19L7 15.65L10.35 12.3L11.63 13.56L9.54 15.65M17 15.65L13.65 19L12.38 17.74L14.47 15.65L12.38 13.56L13.65 12.3L17 15.65Z"
                             style="fill:currentColor"
                     />
                 </svg>
-                Resume
-            </a>
-            <AccentButton title="About page" ariaLabel="About page" href="/about" text="View all">
+				</span>
+            </TransparentButton>
+            <AccentButton title="Projects page link"
+                          ariaLabel="Projects page link"
+                          href="/projets" text="View all">
 				<span slot="icon">
 					<svg viewBox="0 0 24 24" style="width:1.35rem;height:1.35rem" role="presentation">
 						<path

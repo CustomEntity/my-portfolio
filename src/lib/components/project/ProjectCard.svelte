@@ -20,7 +20,7 @@
         class="flex items-center rounded-[10px] gap-3 p-2 transition-colors duration-200 hocus:bg-[rgb(var(--project-color)/0.18)] focus:outline-offset-0"
 >
     <img
-            class="h-[54px] w-[54px] rounded-[10px] object-cover transition-colors duration-200 bg-[rgb(var(--project-color)/0.18)]"
+            class="h-[54px] w-[54px] rounded-[10px] object-cover transition-colors duration-200  {isHocus ? 'bg:transparent' : 'bg-[rgb(var(--project-color)/0.18)'}]"
             src={imageUrl}
             alt={title}
     />
