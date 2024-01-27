@@ -2,6 +2,13 @@
 @import 'markdown-theme.css';
 
 @tailwind base;
+
+@layer base {
+	h1 {
+		@apply text-2xl font-bold;
+	}
+}
+
 @tailwind components;
 @tailwind utilities;
 
@@ -11,7 +18,10 @@ html {
 	letter-spacing: 0.025em;
 }
 
-:focus {
+button:focus,
+input:focus,
+textarea:focus,
+a:focus {
 	outline: 2px dashed rgb(var(--color-secondary-txt));
 	outline-offset: 0.25rem;
 }

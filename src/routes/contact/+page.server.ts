@@ -104,7 +104,7 @@ export const actions = {
 		await sendConfirmationEmail(name, email);
 		await sendReceivedContactEmail(name, email, message);
 
-		await new Promise((resolve) => setTimeout(resolve, 3000));
+		await new Promise((resolve) => setTimeout(resolve, 1000));
 		return {
 			form
 		};
